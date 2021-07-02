@@ -22,6 +22,7 @@
 - [ ] Detail 페이지 필수
 
 <h2>데이터베이스 UML</h2>
+https://user-images.githubusercontent.com/73010472/124298739-9453da00-db97-11eb-9cb4-178017b8f24d.PNG
 ![캡처](https://user-images.githubusercontent.com/73010472/124298739-9453da00-db97-11eb-9cb4-178017b8f24d.PNG)
 
 <h2>서버실행법</h2>
