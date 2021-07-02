@@ -22,10 +22,11 @@
 - [ ] Detail 페이지 필수
 
 <h2>데이터베이스 UML</h2>
-https://user-images.githubusercontent.com/73010472/124298739-9453da00-db97-11eb-9cb4-178017b8f24d.PNG
-![캡처](https://user-images.githubusercontent.com/73010472/124298739-9453da00-db97-11eb-9cb4-178017b8f24d.PNG)
+<img src="https://user-images.githubusercontent.com/73010472/124298739-9453da00-db97-11eb-9cb4-178017b8f24d.PNG"  width="700" height="370">
 
 <h2>서버실행법</h2>
-1. manage.py이 있는 파일에 들어가서 VScode를 실행한다.
-2. '. myvenv/Scripts/activate'를 입력해 가상환경을 활성화 한다.
+1. manage.py이 있는 파일에 들어가서 VScode를 실행한다. <br>
+2. '. myvenv/Scripts/activate'를 입력해 가상환경을 활성화 한다. <br>
 3. 'python manage.py runserver'를 입력해 서버를 실행한다!
+
+<h1>멋쟁이사자처럼 9기 화이팅!!</h1>
