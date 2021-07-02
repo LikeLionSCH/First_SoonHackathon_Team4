@@ -93,8 +93,7 @@ html{
 }
 
 #main-product{
-    height: 3000px;
-    width: 1800px;
+    width: 100%;
     padding-top: 80px;
     display: flex;
     justify-content: center;
