@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    font-size: 10px;
+}
+
+#header{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    border: none;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
