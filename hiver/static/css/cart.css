@@ -1,0 +1,430 @@
+@import "reset.css";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+ul, li, dl, dt, dd {margin: 0px; padding: 0px; list-style: none}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    font-family: 'Noto Sans KR', sans-serif;
+    word-break: keep-all
+    /* width: 1160px;
+    padding: 0px 20px; */
+}
+
+.header-container {
+    margin-top: 50px;
+}
+
+.page-title {
+    border-bottom: 1px solid #ebeef2;
+    display: block;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.page-title h2 {
+    max-width: 1190px;
+    font-size: 32px;
+    color: #000000;
+    padding: 0 15px;
+    margin: 54px auto 30px;
+}
+
+/* .cart-wrap */
+.cart-delall {
+    margin-bottom: 20px;
+    padding: 0;
+    border-bottom: none;
+    position: static;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+    z-index: 1;
+}
+
+.cart-wrap {
+    padding: 0 15px;
+    margin-top: 60px;
+    margin-bottom: 160px;
+}
+
+.cart-wrap {
+    max-width: 1190px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+.cart-product-box {
+    border-top: 2px solid #000000;
+    margin-top: 0;
+}
+
+.tit-box {
+    display: block;
+    height: 56px;
+    border-bottom: 1px solid #e2e3e6;
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.tit-box p {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 56px;
+    text-align: center;
+    float: left;
+    margin: 0;
+}
+
+.product-info-cell {
+    width: 50.2%;
+}
+
+.product-option-cell {
+    width: 26.6%;
+}
+
+.product-price-cell {
+    width: 23.2%;
+}
+
+.Cart-seller-item {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #e2e3e6;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/* button {
+
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+} */
+
+.Cart-seller-item {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #e2e3e6;
+    position: relative;
+}
+
+.btn-chk-box {
+    margin: 62px 20px 0 0;
+    float: left;
+    width: 20px;
+}
+
+.item-info {
+    position: relative;
+    width: 48.4%;
+    margin-bottom: 0;
+    padding: 22px 0;
+    border-right: 1px solid #e2e3e6;
+}
+
+.product-thumb {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.product-info {
+    width: calc(100% - 164px);
+    margin: 0 36px 0 20px;
+}
+.discount-percent {
+    margin-right: 2px;
+    font-weight: 700;
+    color: #d3a164;
+}
+
+.discount-price {
+    margin-right: 4px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.price {
+    color: #888888;
+    font-weight: normal;
+}
+
+.btn-item-del {
+    position: absolute;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 22px;
+    right: 22px;
+    width: 14px;
+    height: 14px;
+}
+
+.seller {
+    margin: 0 0 4px;
+}
+
+.seller > a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #000000;
+    vertical-align: top;
+}
+
+.price-wrap {
+    line-height: 1;
+}
+
+.item-option-box {
+    width: 27.6%;
+    border-right: 1px solid #e2e3e6;
+    background: #ffffff;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.item-option:first-child {
+    border-top: none;
+}
+
+.item-option {
+    margin-bottom: 0;
+    padding: 22px;
+    background-color: #fff;
+}
+
+.option-info {
+    margin: 0 0 16px;
+    padding: 0 0 12px;
+    border-bottom: 1px solid #e2e3e6;
+    font-size: 14px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.input_num {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+    border: 1px solid #e2e3e6;
+    border-left: none;
+    border-right: none;
+    display: inline-block;
+}
+
+.payment-price-info-box {
+    padding: 26px 0;
+    border-top: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    text-align: center;
+}
+
+.payment-price {
+    float: left;
+    width: 61%;
+}
+
+.payment-box {
+    position: relative;
+    display: inline-block;
+    margin: 9px 0 0;
+    vertical-align: middle;
+}
+
+.payment-box {
+    position: relative;
+    display: inline-block;
+    margin: 9px 0 0;
+    padding-left: 56px;
+    vertical-align: middle;
+}
+
+.payment-price {
+    float: left;
+    width: 61%;
+}
+
+.price {
+    float: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.price-2 {
+    font-size: 12px;
+    color: #888888;
+    font-weight: normal;
+}
+
+
+.btn-order-buy-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: static;
+    padding: 0 20px;
+    border: 0;
+    text-align: center;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.btn-order {
+    display: inline-block;
+    max-width: 320px;
+    padding: 21px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    vertical-align: top;
+    background-color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Sec_footer {
+    font-size: 13px;
+    font-family: 'Noto Sans KR', sans-serif;
+    word-break: keep-all;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 80px;
+    border-top: 1px solid #ebeef2;
+    background-color: rgba(244, 244, 244, 0.6);
+    z-index: 11;
+    padding-bottom: 140px;
+}
+
+.Sec_footer {
+    font-size: 13px;
+    font-family: 'Noto Sans KR', sans-serif;
+    word-break: keep-all;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 80px;
+    border-top: 1px solid #ebeef2;
+    background-color: rgba(244, 244, 244, 0.6);
+    z-index: 11;
+    padding-bottom: 140px;
+}
+
+.nav division {
+    font-size: 13px;
+    word-break: keep-all;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', 'Spoqa Han Sans', Sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 20px 16px 0;
+}
+
+.address division {
+    font-size: 13px;
+    word-break: keep-all;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', 'Spoqa Han Sans', Sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 20px 16px 0;
+    margin-top: 20px;
+    padding-top: 40px;
+    border-top: 1px solid #ebeef2;
+}
+
+.links-about {
+    font-size: 13px;
+    word-break: keep-all;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', 'Spoqa Han Sans', Sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    float: left;
+    margin-top: 8px;
+}
+
+.br-m {
+    font-size: 13px;
+    word-break: keep-all;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', 'Spoqa Han Sans', Sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    display: inline;
+    margin-bottom: 0;
+}
+
+.links-about terms {
+    word-break: keep-all;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Noto Sans KR', 'Spoqa Han Sans', Sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    position: relative;
+    color: #666;
+    float: left;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    margin-left: 8px;
+    padding-left: 12px;
+}
