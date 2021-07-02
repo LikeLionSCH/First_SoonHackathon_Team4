@@ -7,6 +7,94 @@
             box-sizing: border-box;
 }
 
+html{
+    font-size: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#header{
+    position: fixed;
+    top: 0px;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.header-content{
+    width: 1160px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right-area{
+    display: flex;
+}
+
+.search-area{
+    width: 304px;
+    height: 40px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 55px;
+}
+
+.search-input{
+    width: 250px;
+    height: 38px;
+    margin: -6px 0px;
+    border: none;
+}
+
+.shopping-basket-area{
+    margin-right: 15px;
+}
+
+#main{
+    height: 1000px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+#nav-bar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.nav-bar-content{
+    width: 1160px;
+    padding: 0px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar-menu-button{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: black;
+    text-decoration-line: none;
+}
+
+.nav-bar-menu-button:hover{
+    color: #d3a164;
+}
+
+.current-button{
+    color: #d3a164;
+}
+
+
 ul, li, dl, dt, dd {margin: 0px; padding: 0px; list-style: none}
 
 body {
