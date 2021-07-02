@@ -1,0 +1,90 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% block link %}{% endblock %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="header-content">
+            <div class="header-left-area">
+                <a href=""><img src="{% static 'data/logo.png' %}" alt="로고"></a>
+            </div>
+            <div class="header-right-area">
+                <div class="search-area">   
+                    <div class="search-box">
+                        <input type="text" class="search-input">
+                    </div>
+                    <div class="search-logo">
+                        <img src="{% static 'data/search.png' %}" alt="검색">
+                    </div>
+                </div>
+                <div class="shopping-basket-area">
+                    <div class="shopping-basket-logo">
+                        <a href="{% url 'cart' %}"><img src="{% static 'data/cart.png' %}" alt="장바구니"></a>
+                    </div>
+                </div>
+                <div class="login-area">
+                    <div class="login-logo">
+                        <img src="{% static 'data/login.png' %}" alt="로그인">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <!-- nav-bar -->
+        <div id="nav-bar">
+            <div class="nav-bar-content">
+                <div class="nav-bar-menu">
+                    <a href="" class="nav-bar-menu-button current-button">
+                        홈
+                    </a>
+                </div>
+                <div class="nav-bar-menu">
+                    <a href="" class="nav-bar-menu-button">
+                        혜택존
+                    </a>
+                </div>
+                <div class="nav-bar-menu">
+                    <a href="" class="nav-bar-menu-button">
+                        브랜드
+                    </a>
+                </div>
+                <div class="nav-bar-menu">
+                    <a href="" class="nav-bar-menu-button">
+                        쇼핑몰
+                    </a>
+                </div>
+                <div class="nav-bar-menu">
+                    <a href="" class="nav-bar-menu-button">
+                        라이프
+                    </a>
+                </div>
+                <div class="nav-bar-menu">
+                    <a href="" class="nav-bar-menu-button">
+                        럭셔리
+                    </a>
+                </div>
+                <div class="nav-bar-menu">
+                    <a href="" class="nav-bar-menu-button">
+                        스토어
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        {% block contents %} {% endblock %}
+
+    </div>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

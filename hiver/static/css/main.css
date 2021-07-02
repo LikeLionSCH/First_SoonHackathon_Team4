@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#header{
+    position: fixed;
+    top: 0px;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.header-content{
+    width: 1160px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right-area{
+    display: flex;
+}
+
+.search-area{
+    width: 304px;
+    height: 40px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 55px;
+}
+
+.search-input{
+    width: 250px;
+    height: 38px;
+    margin: -6px 0px;
+    border: none;
+}
+
+.shopping-basket-area{
+    margin-right: 15px;
+}
+
+#main{
+    height: 1000px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+#nav-bar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.nav-bar-content{
+    width: 1160px;
+    padding: 0px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar-menu-button{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: black;
+    text-decoration-line: none;
+}
+
+.nav-bar-menu-button:hover{
+    color: #d3a164;
+}
+
+.current-button{
+    color: #d3a164;
+}
+
+#slide-bar{
+    width: 100%;
+    height: 454px;
+    background-color: darkgreen;
+    margin-bottom: 100px;;
+}
+
+#main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#today-list{
+    width: 1160px;
+    padding: 0px 20px;
+}
+
+.today-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.today-title{
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.today-top-right-area{
+    display: flex;
+    align-items:center;
+}
+
+.today-top-menu-title{
+    color: #888888;
+    font-size: 1.7rem;
+    margin-left: 30px;
+}
+
+.current-title{
+    color: #d3a164;
+    border-bottom: 2px solid #d3a164;
+}
+
+.today-products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-thumbnail{
+    width: 278px;
+    height: 278px;
+}
+
+.product-detail{
+    padding-left: 5px;
+    margin-bottom: 35px;
+}
+
+.product-company{
+    color: #888888;
+    font-size: 1.3rem;
+    margin: 10px 0px 0px;
+}
+
+.product-title{
+    font-size: 1.5rem;
+    margin: 0px;
+}
+
+.product-price{
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+}
+
+.product-price p{
+    margin: 5px 0px 0px;
+}
+
+.discount-rate{
+    color: #d3a164;
+    padding-right: 7px;
+}
