@@ -33,7 +33,7 @@
                     <div class="today-product">
                         {% for a in products %}
                         <div class="product-thumbnail">
-                            <img src="{{ a.image.url }}" alt="상품1">
+                            <a href="{% url 'detail' %}"><img src="{{ a.image.url }}" alt="상품1"></a>
                         </div>
                         <div class="product-detail">
                             <p class="product-company">마인드브릿지</p>
