@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} HIVER {% endblock %}
+{% block link %} {% static 'css/main.css' %} {% endblock %}
+{% block contents %}
+
+        <!-- slide bar -->
+        <div id="slide-bar">
+            a
+        </div>
+
+        <!-- main -->
+        <div id="main-container">
+            <div id="today-list">
+                <div class="today-top">
+                    <div class="today-top-left-area">
+                        <p class="today-title">TODAY 랭킹</p>
+                    </div>
+                    <div class="today-top-right-area">
+                        <div class="today-top-menu">
+                            <p class="today-top-menu-title current-title">브랜드</p>
+                        </div>
+                        <div class="today-top-menu">
+                            <p class="today-top-menu-title">쇼핑몰</p>
+                        </div>
+                        <div class="today-top-menu">
+                            <p class="today-top-menu-title">라이프</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="today-products">
+                    <div class="today-product">
+                        <div class="product-thumbnail">
+                            <img src="{% static 'data/product1.png' %}" alt="상품1">
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-company">마인드브릿지</p>
+                            <p class="product-title">[1+1][화이트컬러 재입고][수피마]에어로...</p>
+                            <div class="product-price">
+                                <p class="discount-rate">3%</p>
+                                <p class="price">38,700</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="today-product">
+                        <div class="product-thumbnail">
+                            <img src="{% static 'data/product2.png' %}" alt="상품2">
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-company">오가프</p>
+                            <p class="product-title">(3차 리오더 7월6일 순차 예약배송) SMAS...</p>
+                            <div class="product-price">
+                                <p class="discount-rate">25%</p>
+                                <p class="price">31,500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="today-product">
+                        <div class="product-thumbnail">
+                            <img src="{% static 'data/product3.png' %}" alt="상품3">
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-company">유엔엘씨</p>
+                            <p class="product-title">[하이버 단독][1+1] COOL SOFT SHORT ...</p>
+                            <div class="product-price">
+                                <p class="discount-rate">56%</p>
+                                <p class="price">39,600</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="today-product">
+                        <div class="product-thumbnail">
+                            <img src="{% static 'data/product4.png' %}" alt="상품4">
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-company">미니멀프로젝트</p>
+                            <p class="product-title">미니멀프로젝트 로버스트 헤비 오버핏 반팔...</p>
+                            <div class="product-price">
+                                <p class="discount-rate">45%</p>
+                                <p class="price">19,700</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="today-product">
+                        <div class="product-thumbnail">
+                            <img src="{% static 'data/product5.png' %}" alt="상품5">
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-company">센스오브뉴욕</p>
+                            <p class="product-title">[1+1] 폴로 랄프로렌 클래식핏 티셔츠 화이...</p>
+                            <div class="product-price">
+                                <p class="discount-rate">30%</p>
+                                <p class="price">129,900</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="today-product">
+                        <div class="product-thumbnail">
+                            <img src="{% static 'data/product6.png' %}" alt="상품6">
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-company">NCPICKS</p>
+                            <p class="product-title">폴로랄프로렌 PK 티셔츠 17종</p>
+                            <div class="product-price">
+                                <p class="discount-rate">21%</p>
+                                <p class="price">79,900</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="today-product">
+                        <div class="product-thumbnail">
+                            <img src="{% static 'data/product7.png' %}" alt="상품7">
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-company">NCPICKS</p>
+                            <p class="product-title">라코스테 파리폴로 반팔티 6종</p>
+                            <div class="product-price">
+                                <p class="price">69,900</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="today-product">
+                        <div class="product-thumbnail">
+                            <img src="{% static 'data/product8.png' %}" alt="상품8">
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-company">유엔엘씨</p>
+                            <p class="product-title">[1+1]쿨 섬머 워셔블 오픈 카라 니트(6color)</p>
+                            <div class="product-price">
+                                <p class="discount-rate">56%</p>
+                                <p class="price">39,600</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
