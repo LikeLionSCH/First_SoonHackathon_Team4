@@ -1,0 +1,210 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} HIVER {% endblock %}
+{% block link %} {% static 'css/cart.css' %} {% endblock %}
+{% block contents %}
+
+    <header class="header-container">
+        
+    </header>
+
+    <div class="page-title">
+        <h2>장바구니</h2>
+    </div>
+
+    <div class="cart-wrap">
+        <div class="cart-delall">
+            <div class="chk-all">
+                <input type="checkbox" name="Cart-checkbox">
+                <span>전체선택 (1/1)</span>
+            </div>
+            <div class="btn-wrap">
+                <button name="선택삭제">선택삭제</button><button name="품절삭제">품절삭제</button>
+            </div>
+        </div>
+        
+        <div class="cart-product-box">
+            <div class="tit-box">
+                <p class="product-info-cell">상품정보</p>
+                <p class="product-option-cell">옵션</p>
+                <p class="product-price-cell">상품금액</p>
+            </div>
+        </div>
+
+        <div class="cart-seller-list">
+            <ul class="cart-seller-list">
+                <li class="cart-item">
+                    <div class="Cart-seller-item">
+                        <div class="btn-chk-box">
+                            <input type="checkbox" id="product-item-35125368">
+                            <!-- <label data-v-7d7d9054="" for="product-item-35125368">상품 선택</label> -->
+                        </div>
+                        <div class="item-info-box">
+                            <div class="item-info">
+                                <div class="product-thumb">
+                                    <img src="{% static 'data/clothes.PNG' %}" width="100px" height="100px">
+                                </div>
+
+                                <div class="product-info">
+                                    <strong class="seller">
+                                        <a href="/shop/uandlc"><strong>유앤엘씨</strong></a>
+                                    </strong>
+
+                                    <p class="name">
+                                        <a href="/products/33034909">[하이버 단독][1+1] COOL SOFT SHORT SLEEVE CREW NECK KNIT(6color)</a>
+                                    </p>
+
+                                    <div class="price-wrap">
+                                        <span class="discount-percent">56%</span>
+                                        <span class="discount-price">39,600원</span>
+                                        <del>
+                                            <span class="price-2">90,000원</span>
+                                        </del>
+                                    </div>
+                                </div>
+
+                                <button type="button" aria-label="상품 삭제" class="btn-item-del"><img src="{% static 'data/X.png' %}" width="10px" height="10px"></button>
+                            </div>
+                        <div class="item-option-box">
+                            <div class="item-option">
+                                <p class="option-info"><!---->BLACK / M / GRAY / M<!----></p>
+                                <div class="option-detail-box">
+                                    <div class="input-quantity">
+                                        <div class="btn-quanity-box">
+                                            <button aria-label="상품 수 감소" class="num_minus">  
+                                            </button>
+                                            <label for="quantity">
+                                                <span class="input_num">1</span>
+                                            </label>
+                                            <button aria-label="상품 수 증가" class="num_plus"></button>
+                                        </div>
+                                    </div>
+                                    <div class="detail-price">
+                                        <strong class="detail-price-box normal">39,600 원</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="btn-item-buy-wrap">
+                                <div class="btn-item-buy-box">
+                                    <div class="item-price-box">
+                                        <div class="item-price">
+                                            <strong class="default-price">39,600원</strong>
+                                        </div>
+                                        <span class="disabled-price">품절</span>
+                                    </div>
+                                    <button type="button" class="btn-item-buy">주문하기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="payment-price-info">
+            <div class="payment-price-info-box">
+                <ul class="payment-price">
+                    <li class="payment-box">
+                        <strong class="info">총 상품금액</strong>
+                        <p class="price">90,000원</p>
+                    </li>
+                    <li class="payment-box">
+                        <strong class="info">할인예정금액</strong>
+                        <p class="price">50,400원</p>
+                    </li>
+                    <li class="payment-box">
+                        <strong class="info">배송비</strong>
+                        <p class="price">전 상품 무료배송</p>
+                    </li> 
+                </ul>
+
+                <div class="paytment-all-price">
+                    <strong class="info">총 결제금액</strong>
+                    <p class="price">
+                        <span class="point-color">39,600원</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+      
+    
+        <div class="btn-order-buy-wrap">
+            <button type="button" id="btn_order_order" class="btn-order">
+                <span>구매하기</span>
+            </button>
+        </div>
+    </div>
+
+    <footer class="Sec_footer">
+        <nav class="division">
+            <div class="inner">
+                <div class="links-about">
+                    <span class="br-m">
+                        <a href="https://about.hiver.co.kr" target="_blank" class="about">하이버소개</a>
+                        <a href="https://brandi.recruiter.co.kr/app/jobnotice/list" target="_blank" rel="noreferrer noopener" class="recruit">인재채용</a>
+                        <a href="/faq" target="_blank" class="question">자주묻는 질문</a>
+                    </span>
+                    <a href="/access-term" target="_blank" class="terms">이용약관</a>
+                    <a href="/policy" target="_blank" class="privacy">개인정보처리방침</a>
+                    <a href="https://www.ftc.go.kr/www/bizCommView.do?key=3765&amp;apv_perm_no=2016322016230200359&amp;pageUnit=10&amp;searchCnd=wrkr_no&amp;searchKrwd=2208893187&amp;pageIndex=1" target="_blank" rel="noreferrer noopener" class="business">사업자정보확인</a>
+                </div>
+                <div class="links-social">
+                    <a href="https://www.instagram.com/hiver__official" target="_blank" rel="noreferrer noopener" class="instagram">인스타그램</a>
+                    <a href="https://www.facebook.com/hiverofficial/" target="_blank" rel="noreferrer noopener" class="facebook">페이스북</a>
+                    <a href="https://pf.kakao.com/_jqZZC" target="_blank" rel="noreferrer noopener" class="kakao">플러스친구</a>
+                    <a href="https://post.naver.com/hiver__official" target="_blank" rel="noreferrer noopener" class="naver-post">네이버포스트</a>
+                </div>
+            </div>
+        </nav>
+        
+        <address class="division">
+            <div class="inner">
+                <div class="infos-company">
+                    <h1 class="tit-h1">
+                        <a href="#brandi-info" class="more-brandi">하이버</a>
+                    </h1>
+                    <div id="brandi-info" class="infos">
+                        <div class="bundle">
+                            <span class="part">대표이사 : 서정민</span>
+                            <span class="part">사업자등록번호 : 220-88-93187</span>
+                            <span class="part">통신판매업신고 : 2016-서울강남-00359</span>
+                        </div>
+                        <div class="bundle">
+                            <span class="part">호스팅사업자 : (주)브랜디</span>
+                            <span class="part">주소 : 서울 강남구 테헤란로38길 12 (역삼동)</span>
+                        </div>
+                        <div class="bundle">개인정보관리책임자 : 윤석호 <a href="mailto:privacy@brandi.co.kr">privacy@brandi.co.kr</a>
+                        </div>
+                    </div>
+                    <p class="alert">
+                        <span class="br">(주)브랜디가 제공하는 하이버 서비스는 통신판매중개자로서 통신판매 당사자가 아니며,</span>
+                        <span class="br">판매자가 등록한 상품정보 및 거래에 하이버는 책임지지 않습니다.</span>
+                    </p>
+                    <div class="prd-info">
+                        <strong>100% 정품</strong>
+                        <p>하이버에서 판매되는 모든 브랜드 제품은 정식제조, 정식수입원을 통해 유통되는 100% 정품입니다.</p>
+                    </div>
+                </div>
+                <div class="infos-cs">
+                    <h2 class="tit-h1">고객센터 <a href="tel:16706576">1670-6576</a> </h2>
+                    <div class="time">
+                        <h3 class="tit-h2">영업시간</h3>
+                        <time datetime="10:00">AM 10:00</time> ~ <time datetime="17:00">PM 17:00</time> (주말 및 공휴일 휴무)
+                    </div>
+                    <div class="time">
+                        <h3 class="tit-h2">점심시간</h3>
+                        <time datetime="12:30">PM 12:30</time> ~ <time datetime="13:30">PM 13:30</time>
+                    </div>
+                    <div class="infos-link">
+                        <a href="http://pf.kakao.com/_yCxkxhC" target="_blank" rel="noreferrer noopener">입점문의</a>
+                        <a href="https://admin.hiver.co.kr" target="_blank">셀러어드민</a>
+                    </div>
+                </div>
+            </div>
+        </address>
+    </footer>    
+{ % endblock %}
+
