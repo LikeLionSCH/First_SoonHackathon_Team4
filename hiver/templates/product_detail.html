@@ -1,28 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/product_detail.css">
-    <title>Document</title>
-</head>
-<body>
-    <container id="main"> 
+{% extends 'base.html' %}
+{% load static %}
+{% block link %}{% static 'css/product_detail.css' %}{% endblock %}
+{% block title %}제품 상세 페이지{% endblock %}
+{% block contents %}
+    <container id="main">
         <section id="product-detail">
             <article id="product-images">
-                <img src="image/item.png" width="600px">
+                <img src="{% static 'image/item.png' %}" width="600px">
             </article>
             <article id="product-prices">
                 <div id="store">
-                    <img src="/image/store1.png" height="46px" style="border: 1px solid black;">
+                    <img src="{{ Product.image.url }}" height="46px" style="border: 1px solid black;">
                     <div id="storeName">
                         <p><strong>마인드 브릿지</strong></p>
                         <p style="color: rgb(131, 131, 131); font-size: 13px;">스토어 바로가기 > </p>
                     </div>
                 </div>
                 <div id="product-name">
-                    <h2>[1+1][화이트컬러 재입고][수피마]에어로쿨티셔츠_반팔 MVTS0140</h2>
+                    <h2>{{Product.title}}</h2>
                     <span style="color: rgb(190, 134, 64); font-size: 30px;"><strong>3%</strong></span>
                     <span style="font-size: 30px; margin: 0px 5px;"><strong>38,700원</strong></span>
                     <span style="color: gray; font-size: 18px;"><del>39,900원</del></span>
@@ -31,10 +26,10 @@
                     <div style="width: 5px; height: 100%; background-color: rgb(190, 134, 64);">
                     </div>
                     <div id="coupon-prices">
-                        <p style="color: rgb(190, 134, 64); font-size: 15px;"><strong>쿠폰 적용가 30,960원</strong></p>
+                        <p style="color: rgb(190, 134, 64); font-size: 15px;"><strong>쿠폰 적용가 {{Product.price}}원</strong></p>
                         <p style="color: rgb(131, 131, 131); font-size: 11px;">(하이버 쿠폰 다운로드 후 결제 시 적용 가능합니다) </p>
                     </div>
-                    <img src="/image/쿠폰1.png" height="38px">
+                    <img src="{% static 'image/쿠폰1.png' %}" height="38px">
                 </div>
                 <div id="product-money">
                     <div class="product-detail-category">
@@ -57,19 +52,19 @@
                 <div class="option1" style="margin-bottom: -30px;">
                     <button class="dropbtn">[선택 1] 옵션을 선택하세요.</button>
                         <div class="dropdown-content">
-                            <a href="#">홈</a>
-                            <a href="#">회사소개</a>
-                            <a href="#">제품소개</a>
-                            <a href="#">오시는길</a>
+                            <a href="#">블랙</a>
+                            <a href="#">카키</a>
+                            <a href="#">핑크</a>
+                            <a href="#">로제</a>
                         </div>
                 </div>
                 <div class="option1">
                     <button class="dropbtn">[선택 2] 옵션을 선택하세요.</button>
                         <div class="dropdown-content">
-                            <a href="#">홈</a>
-                            <a href="#">회사소개</a>
-                            <a href="#">제품소개</a>
-                            <a href="#">오시는길</a>
+                            <a href="#">M</a>
+                            <a href="#">L</a>
+                            <a href="#">XL</a>
+                            <a href="#">Free</a>
                         </div>
                 </div>
                 <div id="total-prices">
@@ -102,32 +97,50 @@
                     주문정보
                 </div>
                 <div class="product-detail-choose" style="display: none;">
-                    <img src="image/detail1.png" width="1000px" style="margin-left: 70px;">
+                    <img src="{% static 'image/detail1.png' %}" width="1000px" style="margin-left: 70px;">
                 </div>
                 <div class="product-detail-choose">
                     <p>사진 리뷰 7</p>
                     <hr>
                     <div style="display: flex;">
                         <img src="https://avatars.githubusercontent.com/u/65885185?s=60&v=4" style="border-radius: 30px; margin-right: 30px;" width="60px">
-                        <p style="font-size: 20px;">gy*********<br>2021.07.02</p>
+                        <p style="font-size: 20px;">{gy*********}<br>2021.07.02</p>
                     </div>
                     <p style="float: right;">170cm</p>
                     <p style="float: left; margin: 50px 0px 0px 30px;">이정도면 인생 기본티</p>
                     <div style="width: 1000px; height: 100px; ">
                     </div>
                     <img src="https://avatars.githubusercontent.com/u/65885185?s=60&v=4" style=" margin-left: 30px;" width="150px">
+                    <hr>
+                    <div style="display: flex;">
+                        <img src="https://avatars.githubusercontent.com/u/65885185?s=60&v=4" style="border-radius: 30px; margin-right: 30px;" width="60px">
+                        <p style="font-size: 20px;">{ta*********}<br>2021.07.02</p>
+                    </div>
+                    <p style="float: right;">190cm</p>
+                    <p style="float: left; margin: 50px 0px 0px 30px;">나 이거 100장 있음ㅋㅋ</p>
+                    <div style="width: 1000px; height: 100px; ">
+                    </div>
+                    <img src="https://avatars.githubusercontent.com/u/65885185?s=60&v=4" style=" margin-left: 30px;" width="150px">
+                    <hr>
+                    <div style="display: flex;">
+                        <img src="https://avatars.githubusercontent.com/u/65885185?s=60&v=4" style="border-radius: 30px; margin-right: 30px;" width="60px">
+                        <p style="font-size: 20px;">{zx*********}<br>2021.07.01</p>
+                    </div>
+                    <p style="float: right;">160cm</p>
+                    <p style="float: left; margin: 50px 0px 0px 30px;">제가 입기엔 너무 크네요... 키 작다고 놀리는 겁니까..</p>
+                    <div style="width: 1000px; height: 100px; ">
+                    </div>
+                    <img src="https://avatars.githubusercontent.com/u/65885185?s=60&v=4" style=" margin-left: 30px;" width="150px">
                 </div>
                 <div class="product-detail-choose"style="display: none;">
-                    <img src="/image/qa.png" width="1000px" style="margin-left: 70px;">
+                    <img src="{% static 'image/qa.png' %}" width="1000px" style="margin-left: 70px;">
                 </div>
                 <div class="product-detail-choose" style="display: none;">
-                    <img src="/image/order.png" width="1000px" style="margin-left: 70px;">
+                    <img src="{% static 'image/order.png' %}" width="1000px" style="margin-left: 70px;">
                 </div>
                 <div class="product-detail-choose">
                 </div>
             </article>
         </section>
     </container>
-</body>
-</html>
-
+{% endblock %}
