@@ -31,17 +31,19 @@
                 </div>
                 <div class="today-products">
                     <div class="today-product">
+                        {% for a in products %}
                         <div class="product-thumbnail">
-                            <img src="{% static 'data/product1.png' %}" alt="상품1">
+                            <img src="{{ a.image.url }}" alt="상품1">
                         </div>
                         <div class="product-detail">
                             <p class="product-company">마인드브릿지</p>
-                            <p class="product-title">[1+1][화이트컬러 재입고][수피마]에어로...</p>
+                            <p class="product-title">{{ a.title }}</p>
                             <div class="product-price">
                                 <p class="discount-rate">3%</p>
-                                <p class="price">38,700</p>
+                                <p class="price">{{ a.price }}</p>
                             </div>
                         </div>
+                        {% endfor %}
                     </div>
                     <div class="today-product">
                         <div class="product-thumbnail">
